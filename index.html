@@ -61,17 +61,17 @@ body {
 }
 
 /* ─── CAPA ─── */
-.capa { position: relative; background: #062a48; overflow: hidden; }
-.capa-img { width: 100%; height: 340px; object-fit: cover; display: block; opacity: .55; filter: saturate(.7); }
-.capa-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(6,30,56,.2) 0%, rgba(6,30,56,.72) 55%, rgba(6,30,56,.97) 100%); }
+.capa {  position: relative;  background: #062a48;  overflow: hidden; }
+.capa-img {  position: absolute;  top: 0;  left: 80px;  width: 100%;  height: 100%;  object-fit: cover;  opacity: 0.3;  filter: saturate(0.5);  z-index: 1;  pointer-events: none; }
+.capa-overlay {  position: absolute;  inset: 0;  background: linear-gradient(to bottom, rgba(6,30,56,.5) 0%, rgba(6,30,56,.8) 100%);  z-index: 2; }
+.capa-content {  position: relative;  z-index: 5;  padding: 0 40px 0;  color: #fff; }
 .capa-top-bar { position: absolute; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 14px 40px; border-bottom: 1px solid rgba(255,255,255,.1); z-index: 10; }
 .capa-meta { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.5); }
 .capa-ed-pill { background: rgba(9,155,57,.22); border: 1px solid rgba(9,155,57,.45); color: rgba(255,255,255,.8); font-size: 10px; letter-spacing: .15em; text-transform: uppercase; padding: 4px 12px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; }
-.capa-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 0 40px 0; z-index: 10; }
-.capa-eyebrow { font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--teal); font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.capa-eyebrow { font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--teal); font-weight: 600; margin-top: 60px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
 .capa-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--teal); }
 .capa-main { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 32px; padding-bottom: 32px; }
-.capa-title { font-family: 'Playfair Display', serif; font-size: 88px; font-weight: 900; line-height: .86; color: #fff; letter-spacing: -.02em; }
+.capa-title { font-family: 'Playfair Display', serif; font-size: 88px; font-weight: 900; line-height: .86; color: #fff; letter-spacing: -.02em; margin-top: 30px; }
 .capa-title em { font-style: italic; color: rgba(255,255,255,.65); font-weight: 400; font-size: .72em; display: block; line-height: 1.1; letter-spacing: -.01em; }
 .capa-right { text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
 .capa-logo img { width: 220px; opacity: .9; filter: brightness(1.1); }
@@ -509,28 +509,62 @@ body {
     overflow-x: hidden;
   }
 
-  .capa {
-    background: #062a48; /* mantém o fundo escuro da capa, mas o restante claro */
+    /* Capa – fundo único azul escuro */
+    .capa {
+    min-height: 500px;           /* garante altura suficiente para o conteúdo */
+    background: #062a48;
+  }
+
+  .capa-img {
+    height: 100%;                /* cobre toda a altura da capa */
+    opacity: 0.55;
+  }
+
+  .capa-top-bar {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .capa-content {
+    padding: 20px 16px 24px;
   }
 
   .capa-main {
     grid-template-columns: 1fr;
+    gap: 16px;
+    padding-bottom: 8px;
   }
+
   .capa-title {
-    font-size: 48px;
-    line-height: 0.9;
+    font-size: 46px;
+    line-height: 0.92;
   }
+
   .capa-right {
     align-items: flex-start;
+    gap: 10px;
   }
+
+  .capa-logo img {
+    width: 160px;
+  }
+
+  .capa-badge {
+    font-size: 9px;
+    padding: 4px 10px;
+  }
+
   .capa-sumario {
     grid-template-columns: 1fr 1fr;
+    border-top: 1px solid rgba(255,255,255,.12);
+    margin-top: 10px;
   }
-  .capa-img {
-    left: 0 !important;
-    width: 100% !important;
-    height: auto;
-    object-fit: cover;
+
+  .capa-sub-line {
+    font-size: 9.5px;
+    margin-top: 12px;
+    padding: 10px 0 0;
   }
 
   .sec {
@@ -588,12 +622,6 @@ body {
     grid-template-columns: 1fr;
     gap: 2px;
   }
-  .capa-content {
-    padding: 0 16px 16px;
-  }
-  .capa-top-bar {
-    padding: 10px 16px;
-  }
   #flip-toggle-btn {
     bottom: 16px;
     right: 16px;
@@ -625,8 +653,12 @@ body {
       <span class="capa-meta">Prefeitura de Serra &nbsp;·&nbsp; Secretaria Municipal de Saúde</span>
       <span class="capa-ed-pill">Edição 01 · 2026</span>
     </div>
-    <img class="capa-img" src="https://res.cloudinary.com/ddedyywe9/image/upload/v1776440922/aps-Photoroom_bg5a9a.png" alt="APS" style="width: 80%; position: relative; left: 160px;"/>
+    
+    <!-- IMAGEM COMO FUNDO (marca d'água) – agora absoluta -->
+    <img class="capa-img" src="https://res.cloudinary.com/ddedyywe9/image/upload/v1776440922/aps-Photoroom_bg5a9a.png" alt="APS" />
+    
     <div class="capa-overlay"></div>
+    
     <div class="capa-content">
       <div class="capa-eyebrow">Boletim Informativo Trimestral</div>
       <div class="capa-main">
@@ -649,6 +681,7 @@ body {
     </div>
   </div>
   <div style="font-size:10.5px;color:var(--ink4);font-style:italic;padding:7px 40px;background:var(--paper1);border-bottom:1px solid var(--rule)">Atenção Primária à Saúde</div>
+
 
   <!-- APRESENTAÇÃO + APS -->
   <div class="sec">
@@ -1775,7 +1808,7 @@ function renderSpread(){
   const rNum   =document.getElementById('r-num');
 
   if(singlePage){
-    // Mobile: uma página por vez (comportamento original)
+    stage.classList.add('single'); 
     setPageContent(lScroll, lNum, currentSpreadIdx); // currentSpreadIdx aqui equivale ao índice da página
     if(rScroll) rScroll.innerHTML='';
     if(rNum) rNum.textContent='';
@@ -1791,11 +1824,9 @@ function renderSpread(){
     // Desktop: usa a lista de spreads
     const spread = spreads[currentSpreadIdx] || { type:'empty' };
     if(spread.type==='single'){
-      // Capa isolada: só página esquerda, direita fica vazia
       setPageContent(lScroll, lNum, spread.left);
       if(rScroll) rScroll.innerHTML='';
       if(rNum) rNum.textContent='';
-      // Ajusta visual: esconde a página direita (classe 'right' fica oculta via CSS)
       stage.classList.add('single');
     } else if(spread.type==='double'){
       stage.classList.remove('single');
