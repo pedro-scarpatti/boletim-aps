@@ -123,6 +123,7 @@ body {
 
 .pull-quote { border-left: 3px solid var(--primary-green); padding: 14px 22px; font-family: 'Playfair Display', serif; font-style: italic; font-size: 18px; line-height: 1.5; color: var(--ink2); margin: 20px 0; background: rgba(9,155,57,.06); text-align: justify; }
 .pull-quote.b { border-color: var(--primary-blue); background: rgba(6,72,137,.06); }
+.pull-quote.a { border-color: var(--amber); background: rgba(168,74,8,.06); }
 
 /* ─── LAYOUT ─── */
 .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -658,11 +659,11 @@ body {
     <div class="cols-wide">
       <div>
         <span class="kicker a">Editorial</span>
-        <h1 class="headline-xl" style="margin-bottom:14px">1º Boletim<br>Informativo<br>Trimestral</h1>
+        <h1 class="headline-xl" style="margin-bottom:14px; color: var(--amber);">1º Boletim<br>Informativo<br>Trimestral</h1>
         <p class="deck">Um marco no fortalecimento da comunicação, da partilha de informações e da valorização do trabalho desenvolvido na APS.</p>
         <p class="body-text">A cada edição, traremos conteúdos estratégicos, dados, orientações e informações institucionais que contribuam para o aprimoramento das ações e para a integração entre os diferentes atores que constroem a Atenção Primária no município de Serra.</p>
         <p class="body-text">A Atenção Primária à Saúde é <strong>a base do cuidado no SUS</strong> e o ponto de partida para a organização da rede de atenção. Diariamente, equipes, gestores e referências técnicas atuam para garantir acesso, cuidado contínuo e respostas às necessidades da população.</p>
-        <div class="sec-line" style="margin-top:22px; margin-bottom:22px"></div>
+        <div class="sec-line" style="margin-top:22px; margin-bottom:22px; border-color:var(--primary-green);"></div>
         <span class="kicker g">Conceito</span>
         <h2 class="headline-lg g" style="margin-bottom:12px">O que é a APS - Atenção Primária à Saúde?</h2>
         <p class="body-text">Sendo o primeiro nível de Atenção à Saúde, constitui a <strong>principal porta de entrada do SUS</strong>, com o compromisso na construção do cuidado mais humanizado, resolutivo e integral.</p>
@@ -674,7 +675,6 @@ body {
           <div class="highlight-label">Compromisso</div>
           <div class="highlight-body">A APS se faz presente em todo o território municipal, responsável pelo acompanhamento contínuo de toda a população de Serra.</div>
         </div>
-        <img class="capa-img" src="https://res.cloudinary.com/ddedyywe9/image/upload/v1776440922/aps-Photoroom_bg5a9a.png" alt="APS" style="width: 80%; position: relative; left: 20%; bottom: 1%;"/>
       </div>
     </div>
   </div>
@@ -803,7 +803,7 @@ body {
       <!-- Coluna esquerda: texto + primeira metade das refs -->
       <div>
         <span class="kicker g">Programas e Políticas de Saúde</span>
-        <h2 class="headline-md g" style="margin-bottom:10px">Referências Técnicas dos Programas</h2>
+        <h2 class="headline-md g" style="margin-bottom:10px; color: var(--primary-green);">Referências Técnicas dos Programas</h2>
         <p class="body-text" style="font-size:13px;margin-top: 2px; margin-bottom: 10px;">Referências técnicas dos programas e políticas de saúde.</p>
         <div id="refs-left" class="ref-grid"></div>
       </div>
@@ -817,7 +817,7 @@ body {
   <!-- COBERTURA DA APS (duas colunas: esquerda tabela+quote | direita texto) -->
   <div class="sec">
     <div class="sec-line" style="margin-bottom:20px;">
-      <span class="sec-line-label" style="margin-bottom:0">Cobertura da APS</span>
+      <span class="sec-line-label b">Cobertura da APS</span>
       <span class="sec-line-num">APS em Ação · Edição 01</span>
     </div>
     <div class="cols-wide-r" style="align-items:start;">
@@ -835,8 +835,8 @@ body {
       </div>
       <!-- Coluna direita: título e texto -->
       <div>
-        <span class="kicker" >Cobertura</span>
-        <h2 class="headline-lg">Cobertura da APS</h2>
+        <span class="kicker b" >Cobertura</span>
+        <h2 class="headline-lg b">Cobertura da APS</h2>
         <p class="body-text" >Na ponta do atendimento, o município conta com equipes que atuam diretamente nos territórios: <strong >equipes de Saúde da Família (eSF)</strong>, <strong>equipes de Saúde Bucal (eSB)</strong>, <strong>equipes de Atenção Primária (eAP)</strong>, além das <strong>equipes multiprofissionais (eMulti)</strong> e <strong>equipes de Consultório na Rua (eCR)</strong>.</p>
         <p class="body-text">O município de Serra tem adotado como prioridade de atenção à saúde a Estratégia Saúde da Família. O biênio 2024–2025 marcou a maior expansão da eSF na história recente do município: implantação de <strong>12 novas equipes eSF</strong> e conversão de <strong>25 equipes eAP para eSF</strong>. Atualmente, das 40 unidades, <strong>35 operam 100% no modelo eSF</strong>. Hoje contamos com <strong>103 eSF</strong>.</p>
         <p class="body-text">Além disso, o município conta com <strong>22 equipes de Atenção Primária (eAP)</strong>, <strong>32 equipes de Saúde Bucal (eSB)</strong>, <strong>15 equipes eMULTI</strong> e <strong>03 equipes de Consultório na Rua (eCR)</strong>.</p>
@@ -885,8 +885,53 @@ body {
     <div class="sec-line" style="margin-bottom:24px">
       <span class="sec-line-label a">Recursos Humanos</span>
     </div>
-    <h2 class="headline-xl">Vínculos — 1.676 Profissionais</h2>
+    <h2 class="headline-lg" style="color: var(--amber);">Vínculos — 1.676 Profissionais</h2>
     <img src="https://res.cloudinary.com/ddedyywe9/image/upload/v1776342404/Dados_Atualizados_em_Mar%C3%A7o_26_kvrz9i.png" alt="Distribuição de vínculos — dados atualizados março 2026" style="width:100%;max-width:720px;display:block;margin:16px auto 0;border-radius:6px;border:1px solid var(--rule)"/>
+    <div class="fp-hl a" style="margin: 24px;">
+      <div class="fp-hl-label">Destaque</div>
+      <div class="fp-hl-body">Dos 1.676 profissionais, <strong>805 são Estatutários</strong> (48%), seguidos de <strong>384 Celetistas</strong> (23%) e <strong>253 Contratados</strong> (15%). A diversidade de vínculos reflete a trajetória de expansão da rede.</div>
+    </div>
+    
+    <div class="sec-line" style="margin-bottom:24px">
+      <span class="sec-line-label a" style="margin-top: 20px;">Novas Entradas</span>
+    </div>
+    <div class="fp-two-col" style="gap:24px">
+        <div>
+          <span class="fp-kicker a">Novas entradas:</span>
+          <div class="fp-headline md a" style="margin-bottom: 8px;">Entradas eMulti</div>
+            <p class="fp-body sm">  41 novos profissionais efetivos chegam para fortalecer a <strong>eMulti</strong>, garantindo um cuidado mais integrado, ágil e resolutivo junto às equipes de Saúde da Família e Atenção Primária.<br> A distribuição dos novos profissionais:</p>
+              
+            <div style="grid-template-columns: 1fr 1fr; display: grid; gap: 8px; justify-content: center; font-size: 12px; color: var(--ink);">
+              <span style="background: var(--paper1); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px;">12 Farmacêuticos</span>
+              <span style="background: var(--paper1); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px;">9 Psicólogos</span>
+              <span style="background: var(--paper1); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px;">8 Assistentes Sociais</span>
+              <span style="background: var(--paper1); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px;">8 Prof. de Ed. Física</span>
+              <span style="background: var(--paper1); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px;">4 Nutricionistas</span>
+            </div>
+
+            <div class="pull-quote a" style="font-size: 12px;">Na foto, da esq. para a dir.:<br>
+              <strong>Nívea Mota</strong> (RAPS e Consultório na Rua)<br>
+              <strong>Renata Batista</strong> (Coord. eMulti)<br>
+              <strong>Luciana Troccoli</strong> (Núcleo de Avaliação e Controle da ESF)<br>
+              <strong>Mariana Menegueli</strong> (Ger. Assistência Farmacêutica)<br> 
+              Novos profissionais ao fundo.
+            </div>
+              
+        </div>
+        
+
+        <div style="border-left:1px solid var(--rule);padding-left:24px; margin-top:20px;">
+          <div style="background:#fff; border:1px solid var(--rule); border-radius:3px; overflow:hidden;">
+          <img src="https://res.cloudinary.com/ddedyywe9/image/upload/v1776944947/WhatsApp_Image_2026-04-23_at_08.47.28_owa5lz.jpg" 
+            alt="Entradas-eMulti" 
+            style="width:100%; height:324px; object-fit:cover; display:block;"/>
+              
+          <div style="padding:10px 12px; font-size:11.5px; line-height:1.4; color:var(--ink2);">
+            <em>Integração técnica nos dias 17 e 18 de março.</em>
+          </div>            
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- DESTAQUES DO TRIMESTRE -->
@@ -898,7 +943,7 @@ body {
     <div class="cols-wide-r" style="align-items:start">
       <div>
         <span class="kicker a">Trimestre Jan–Mar 2026</span>
-        <h2 class="headline-lg" style="margin-bottom:12px">Destaques do Trimestre</h2>
+        <h2 class="headline-lg" style="margin-bottom:12px; color: var(--amber);">Destaques do Trimestre</h2>
         <p class="body-text" style="margin-bottom:16px">Iniciativas que se destacaram ao longo do trimestre por sua importância e pelos resultados positivos alcançados — ações que evidenciam e valorizam o trabalho diário realizado na APS.</p>
         <div class="newcomers">
           <div class="newcomers-label">✦ Novas chegadas à equipe</div>
@@ -1094,8 +1139,8 @@ body {
       </div>
       <div class="fp-two-col-wide" style="flex:1;min-height:0">
         <div style="display:flex;flex-direction:column;gap:0">
-          <span class="fp-kicker a">Editorial</span>
-          <div class="fp-headline lg a" style="margin-bottom:12px">1º Boletim<br>Informativo<br>Trimestral</div>
+          <span class="fp-kicker g">Editorial</span>
+          <div class="fp-headline lg g" style="margin-bottom:12px">1º Boletim<br>Informativo<br>Trimestral</div>
           <p class="fp-deck" style="margin-bottom:10px">Um marco no fortalecimento da comunicação, da partilha de informações e da valorização do trabalho desenvolvido na APS.</p>
           
           <div class="fp-rule"></div>
@@ -1252,8 +1297,8 @@ body {
       </div>
 
       <!-- SEÇÃO 1: COBERTURA DA APS -->
-      <span class="fp-kicker">Equipes no território</span>
-      <div class="fp-headline lg" style="margin-bottom: 10px;">Cobertura da APS</div>
+      <span class="fp-kicker b">Equipes no território</span>
+      <div class="fp-headline lg b" style="margin-bottom: 10px;">Cobertura da APS</div>
       <div class="fp-two-col-wide-r" style="gap: 20px; margin-bottom: 10px;">
         <!-- Coluna esquerda: indicadores + quote -->
         <div style="display: flex; flex-direction: column; padding-top: 20px;">
@@ -1280,7 +1325,7 @@ body {
       <div class="fp-rule" style="margin: 12px 0;"></div>
 
       <!-- SEÇÃO 2: REDE MUNICIPAL -->
-      <div class="fp-headline md b" style="margin-bottom: 12px; padding-top: 20px;">Rede de Atenção à Saúde do Município</div>
+      <div class="fp-headline lg b" style="margin-bottom: 12px; padding-top: 20px;">Rede de Atenção à Saúde do Município</div>
       <p class="fp-body" style="margin-bottom: 20px;">A rede municipal é composta por serviços que atuam de forma integrada para garantir atenção em diferentes níveis de cuidado:</p>
       <div class="fp-two-col" style="gap: 20px; margin-bottom: 20px;">
         <div style="background:var(--paper1); border:1px solid var(--rule); border-radius:3px; padding:12px 14px;">
@@ -1317,8 +1362,8 @@ body {
         <span class="fp-header-title">Gestão</span>
         <span class="fp-header-num">APS em Ação · Edição 01</span>
       </div>
-      <span class="fp-kicker">Recursos Humanos</span>
-      <div class="fp-headline lg" style="margin-bottom:6px">Vínculos — 1.676 Profissionais</div>
+      <span class="fp-kicker a">Recursos Humanos</span>
+      <div class="fp-headline md a" style="margin-bottom:6px">Vínculos — 1.676 Profissionais</div>
       <p class="fp-body" style="margin-bottom:14px">Distribuição dos profissionais da APS por tipo de vínculo empregatício, com dados atualizados em março de 2026.</p>
       <div style="background:#fff;border:1px solid var(--rule);border-radius:3px;padding:4px;margin-bottom:12px">
         <img src="https://res.cloudinary.com/ddedyywe9/image/upload/v1776342404/Dados_Atualizados_em_Mar%C3%A7o_26_kvrz9i.png" alt="Distribuição de vínculos" style="width:100%;display:block;border-radius:2px"/>
@@ -1326,38 +1371,62 @@ body {
       <div class="fp-hl b">
         <div class="fp-hl-label">Destaque</div>
         <div class="fp-hl-body">Dos 1.676 profissionais, <strong>805 são Estatutários</strong> (48%), seguidos de <strong>384 Celetistas</strong> (23%) e <strong>253 Contratados</strong> (15%). A diversidade de vínculos reflete a trajetória de expansão da rede.</div>
-      </div>
+      </div> 
       <div class="fp-rule" style="margin:16px 0"></div>
+
       <div class="fp-two-col" style="gap:24px">
         <div>
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--primary-blue);margin-bottom:10px">Principais vínculos</div>
-          <ul class="fp-list">
-            <li>Estatutários — 805 profissionais (48%)</li>
-            <li>Celetistas — 384 profissionais (23%)</li>
-            <li>Contratados — 253 profissionais (15%)</li>
-          </ul>
+          <span class="fp-kicker a">Novas entradas:</span>
+          <div class="fp-headline md a" style="margin-bottom: 8px;">Entradas eMulti</div>
+            <p class="fp-body sm">  41 novos profissionais efetivos chegam para fortalecer a <strong>eMulti</strong>, garantindo um cuidado mais integrado, ágil e resolutivo junto às equipes de Saúde da Família e Atenção Primária.<br> A distribuição dos novos profissionais:</p>
+              
+            <div style="grid-template-columns: 1fr 1fr; display: grid; gap: 8px; justify-content: center; font-size: 12px; color: var(--ink);">
+              <span style="background: var(--paper1); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px;">12 Farmacêuticos</span>
+              <span style="background: var(--paper1); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px;">9 Psicólogos</span>
+              <span style="background: var(--paper1); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px;">8 Assistentes Sociais</span>
+              <span style="background: var(--paper1); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px;">8 Prof. de Ed. Física</span>
+              <span style="background: var(--paper1); border: 1px solid var(--rule); border-radius: 3px; padding: 4px 10px;">4 Nutricionistas</span>
+            </div>
+
+            <div class="pull-quote a" style="font-size: 12px;">Na foto, da esq. para a dir.:<br>
+              <strong>Nívea Mota</strong> (RAPS e Consultório na Rua)<br>
+              <strong>Renata Batista</strong> (Coord. eMulti)<br>
+              <strong>Luciana Troccoli</strong> (Núcleo de Avaliação e Controle da ESF)<br>
+              <strong>Mariana Menegueli</strong> (Ger. Assistência Farmacêutica)<br> 
+              Novos profissionais ao fundo.
+            </div>
+              
         </div>
-        <div style="border-left:1px solid var(--rule);padding-left:24px">
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--primary-green);margin-bottom:10px">Contexto</div>
-          <p class="fp-body sm">O biênio 2024–2025 marcou intensa expansão da rede, com <strong>implantação de 12 novas equipes eSF</strong> e conversão de <strong>25 equipes eAP</strong>. Esse crescimento impacta diretamente o perfil de vínculos.</p>
+        
+
+        <div style="border-left:1px solid var(--rule);padding-left:24px; margin-top:20px;">
+          <div style="background:#fff; border:1px solid var(--rule); border-radius:3px; overflow:hidden;">
+          <img src="https://res.cloudinary.com/ddedyywe9/image/upload/v1776944947/WhatsApp_Image_2026-04-23_at_08.47.28_owa5lz.jpg" 
+            alt="Entradas-eMulti" 
+            style="width:100%; height:324px; object-fit:cover; display:block;"/>
+              
+          <div style="padding:10px 12px; font-size:11.5px; line-height:1.4; color:var(--ink2);">
+            <em>Integração técnica nos dias 17 e 18 de março.</em>
+          </div>            
         </div>
       </div>
     </div>
   </div>
+</div>
 
   <!-- PÁG 6 — DESTAQUES -->
   <div class="fp-page" style="background:var(--paper)">
     <div class="fp-pad" style="display: flex; flex-direction: column;">
       
       <!-- Cabeçalho da seção -->
-      <div class="fp-header a">
-        <span class="fp-header-title" style="color:var(--amber)">Destaques do Trimestre</span>
+      <div class="fp-header g">
+        <span class="fp-header-title" style="color:var(--primary-green)">Destaques do Trimestre</span>
         <span class="fp-header-num">APS em Ação · Edição 01</span>
       </div>
 
       <!-- Título principal -->
-      <span class="fp-kicker a">Jan–Mar 2026</span>
-      <div class="fp-headline md a" style="margin-bottom: 8px;">Destaques do Trimestre</div>
+      <span class="fp-kicker g">Jan–Mar 2026</span>
+      <div class="fp-headline lg g" style="margin-bottom: 8px;">Destaques do Trimestre</div>
       <p class="fp-body" style="margin-bottom: 16px; text-align: justify;">
         Iniciativas que se destacaram ao longo do trimestre por sua importância e pelos resultados positivos — ações que evidenciam e valorizam o trabalho diário da APS.
       </p>
@@ -1415,11 +1484,11 @@ body {
       </div>
 
       <!-- Bloco de novas chegadas (opcional) -->
-      <div style="margin-top: 16px; background: rgba(168,74,8,.06); border-left: 3px solid var(--amber); padding: 8px 12px; border-radius: 0 3px 3px 0;">
-        <div style="font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--amber); margin-bottom: 4px;">✦ Novas chegadas à equipe</div>
+      <div style="margin-top: 16px; background: rgba(168,74,8,.06); border-left: 3px solid var(--primary-green); padding: 8px 12px; border-radius: 0 3px 3px 0;">
+        <div style="font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--primary-green); margin-bottom: 4px;">✦ Novas chegadas à equipe</div>
         <div style="display: flex; gap: 16px; font-size: 11px; color: var(--ink2);">
           <span>Coord. Médica — Beatriz Nicoli Ferreira</span>
-          <span>Pediatra para o PAISC</span>
+          <span>Pediatra para o PAISC - Rose</span>
         </div>
       </div>
     </div>
@@ -1501,7 +1570,7 @@ body {
 
   <!-- BLOCO 2: ENCERRAMENTO (fundo paper) -->
   <div style="background:var(--paper); padding:28px 44px 40px; flex:1;">
-    <div class="fp-header a" style="margin-bottom:18px;">
+    <div class="fp-header a" style="margin-bottom:18px; color:var(--amber); border-bottom-color:var(--amber);">
       <span class="fp-header-title" style="color:var(--amber);">Encerramento</span>
       <span class="fp-header-num">APS em Ação · Edição 01</span>
     </div>
@@ -1510,7 +1579,7 @@ body {
       <!-- Coluna esquerda: texto principal -->
       <div>
         <span class="fp-kicker a">Nota dos Editores</span>
-        <div class="fp-headline md" style="margin-bottom:10px;">Palavra Final</div>
+        <div class="fp-headline md a" style="margin-bottom:10px;">Palavra Final</div>
         <p class="fp-body" style="margin-bottom:10px; text-align:justify;">
           A atuação dos editores foi fundamental para garantir a qualidade, a relevância e a organização das informações aqui apresentadas, contribuindo para que este material se consolide como um <strong>instrumento de apoio à prática profissional, à gestão e à qualificação do cuidado.</strong>
         </p>
@@ -1528,7 +1597,7 @@ body {
       
       <!-- Coluna direita: citação e destaque -->
       <div class="fp-col-divider">
-        <div class="fp-pull" style="margin-bottom:16px;">
+        <div class="fp-pull" style="margin-bottom:16px; border-color:var(--amber)">
           "A Atenção Primária à Saúde é a base do cuidado no SUS e o ponto de partida para a organização da rede de atenção."
         </div>
         <div class="fp-hl a">
@@ -1614,7 +1683,9 @@ const zoomSpan  = document.getElementById('zoom-level');
 const counterEl = document.getElementById('page-counter');
 
 const PAGE_W = 860, PAGE_H = 1220;
-let pages=[], currentIdx=0, singlePage=false;
+let pages=[], spreads=[];           // ← spreads é o novo array mestre para desktop
+let currentSpreadIdx=0;            // ← índice do spread atual
+let singlePage=false;
 let baseScale=1, userScale=1;
 let isPanning=false, isSwiping=false;
 let panX=0, panY=0, panSX=0, panSY=0, lastTX=0, lastTY=0, swipeSX=0;
@@ -1622,6 +1693,26 @@ const SWIPE_THRESH=50;
 
 function collectPages(){ return Array.from(document.querySelectorAll('#flipbook-pages > .fp-page')); }
 function checkSingle(){ return window.innerWidth < 720; }
+
+// NOVA FUNÇÃO: constrói a lista de spreads para desktop
+// O primeiro spread é só a capa (página 0); os demais são pares (1-2, 3-4, 5-6 …)
+function buildSpreads(){
+  const p = collectPages();
+  spreads = [];
+  if(p.length === 0) return;
+  // Capa isolada
+  spreads.push({ type:'single', left:0 });
+  // Demais páginas em pares
+  for(let i=1; i<p.length; i+=2){
+    if(i+1 < p.length){
+      spreads.push({ type:'double', left:i, right:i+1 });
+    } else {
+      // Caso sobre uma página ímpar depois da capa (ex: 8 páginas totais → capa + 7)
+      spreads.push({ type:'single', left:i });
+    }
+  }
+}
+
 function computeScale(){
   const vw=window.innerWidth, vh=window.innerHeight;
   const aw=vw-100, ah=vh-52-58-24;
@@ -1660,92 +1751,154 @@ function populateRTGrid(scrollEl){
   });
 }
 
-function setPageContent(scrollEl, numEl, idx){
-  if(idx<0||idx>=pages.length){
+// Função auxiliar para injetar uma página num container de scroll
+function setPageContent(scrollEl, numEl, pageIdx){
+  if(pageIdx<0 || pageIdx>=pages.length){
     scrollEl.innerHTML=`<div style="height:${PAGE_H}px;background:var(--paper1)"></div>`;
     numEl.textContent='';
     return;
   }
   scrollEl.innerHTML='';
-  const clone=pages[idx].cloneNode(true);
+  const clone=pages[pageIdx].cloneNode(true);
   clone.style.height=PAGE_H+'px';
   clone.style.minHeight=PAGE_H+'px';
   scrollEl.appendChild(clone);
-  numEl.textContent=idx+1;
+  numEl.textContent=pageIdx+1;
   populateRTGrid(scrollEl);
 }
 
+// MODIFICADA: renderiza o spread atual (usa spreads[] no desktop, pages[] no mobile)
 function renderSpread(){
   const lScroll=document.getElementById('l-scroll');
   const rScroll=document.getElementById('r-scroll');
   const lNum   =document.getElementById('l-num');
   const rNum   =document.getElementById('r-num');
-  setPageContent(lScroll,lNum,currentIdx);
-  if(!singlePage)setPageContent(rScroll,rNum,currentIdx+1);
 
-  const maxIdx=singlePage?pages.length-1:pages.length-2;
-  const prev=document.getElementById('nav-prev');
-  const next=document.getElementById('nav-next');
-  prev.style.opacity=currentIdx===0?'0.2':'0.6';
-  prev.style.pointerEvents=currentIdx===0?'none':'auto';
-  next.style.opacity=currentIdx>=maxIdx?'0.2':'0.6';
-  next.style.pointerEvents=currentIdx>=maxIdx?'none':'auto';
+  if(singlePage){
+    // Mobile: uma página por vez (comportamento original)
+    setPageContent(lScroll, lNum, currentSpreadIdx); // currentSpreadIdx aqui equivale ao índice da página
+    if(rScroll) rScroll.innerHTML='';
+    if(rNum) rNum.textContent='';
+    // Navegação: limites baseados no total de páginas
+    const prev=document.getElementById('nav-prev');
+    const next=document.getElementById('nav-next');
+    prev.style.opacity=currentSpreadIdx===0?'0.2':'0.6';
+    prev.style.pointerEvents=currentSpreadIdx===0?'none':'auto';
+    next.style.opacity=currentSpreadIdx>=pages.length-1?'0.2':'0.6';
+    next.style.pointerEvents=currentSpreadIdx>=pages.length-1?'none':'auto';
+    if(counterEl) counterEl.textContent = `${currentSpreadIdx+1} / ${pages.length}`;
+  } else {
+    // Desktop: usa a lista de spreads
+    const spread = spreads[currentSpreadIdx] || { type:'empty' };
+    if(spread.type==='single'){
+      // Capa isolada: só página esquerda, direita fica vazia
+      setPageContent(lScroll, lNum, spread.left);
+      if(rScroll) rScroll.innerHTML='';
+      if(rNum) rNum.textContent='';
+      // Ajusta visual: esconde a página direita (classe 'right' fica oculta via CSS)
+      stage.classList.add('single');
+    } else if(spread.type==='double'){
+      stage.classList.remove('single');
+      setPageContent(lScroll, lNum, spread.left);
+      setPageContent(rScroll, rNum, spread.right);
+    } else {
+      lScroll.innerHTML='';
+      rScroll.innerHTML='';
+    }
 
-  if(counterEl){
-    const end=singlePage?currentIdx+1:Math.min(currentIdx+2,pages.length);
-    counterEl.textContent=singlePage
-      ?`${currentIdx+1} / ${pages.length}`
-      :`${currentIdx+1}–${end} / ${pages.length}`;
+    // Atualiza navegação
+    const prev=document.getElementById('nav-prev');
+    const next=document.getElementById('nav-next');
+    prev.style.opacity=currentSpreadIdx===0?'0.2':'0.6';
+    prev.style.pointerEvents=currentSpreadIdx===0?'none':'auto';
+    next.style.opacity=currentSpreadIdx>=spreads.length-1?'0.2':'0.6';
+    next.style.pointerEvents=currentSpreadIdx>=spreads.length-1?'none':'auto';
+
+    if(counterEl){
+      const spread = spreads[currentSpreadIdx];
+      if(spread.type==='single'){
+        counterEl.textContent = `${spread.left+1} / ${pages.length}`;
+      } else {
+        counterEl.textContent = `${spread.left+1}–${spread.right+1} / ${pages.length}`;
+      }
+    }
   }
   updateThumbs();
 }
 
+// MODIFICADA: monta o palco com base no modo (singlePage ou spreads)
 function buildStage(){
   stage.querySelectorAll('.book-page').forEach(n=>n.remove());
-  stage.classList.toggle('single',singlePage);
+  // Sempre criamos as duas metades; no modo capa isolada usamos a classe .single para esconder a direita
+  stage.classList.remove('single');
   const lp=document.createElement('div');
   lp.className='book-page left';
   lp.innerHTML=`<div class="page-scroll" id="l-scroll"></div><span class="page-num" id="l-num"></span>`;
   stage.appendChild(lp);
-  if(!singlePage){
-    const rp=document.createElement('div');
-    rp.className='book-page right';
-    rp.innerHTML=`<div class="page-scroll" id="r-scroll"></div><span class="page-num" id="r-num"></span>`;
-    stage.appendChild(rp);
-  }
+  const rp=document.createElement('div');
+  rp.className='book-page right';
+  rp.innerHTML=`<div class="page-scroll" id="r-scroll"></div><span class="page-num" id="r-num"></span>`;
+  stage.appendChild(rp);
 }
 
+// MODIFICADA: thumbs baseadas na lista de spreads (desktop) ou páginas (mobile)
 function buildThumbs(){
   thumbsCont.innerHTML='';
-  const step=singlePage?1:2;
-  for(let i=0;i<pages.length;i+=step){
-    const t=document.createElement('div');
-    t.className='thumb';
-    t.textContent=i+1;
-    t.dataset.idx=i;
-    t.addEventListener('click',()=>jumpTo(parseInt(t.dataset.idx)));
-    thumbsCont.appendChild(t);
+  if(singlePage){
+    for(let i=0;i<pages.length;i++){
+      const t=document.createElement('div');
+      t.className='thumb';
+      t.textContent=i+1;
+      t.dataset.idx=i;
+      t.addEventListener('click',()=>jumpTo(parseInt(t.dataset.idx)));
+      thumbsCont.appendChild(t);
+    }
+  } else {
+    for(let i=0;i<spreads.length;i++){
+      const spread=spreads[i];
+      const t=document.createElement('div');
+      t.className='thumb';
+      t.textContent=spread.type==='single'?`${spread.left+1}`:`${spread.left+1}–${spread.right+1}`;
+      t.dataset.idx=i;  // índice do spread
+      t.addEventListener('click',()=>jumpTo(parseInt(t.dataset.idx)));
+      thumbsCont.appendChild(t);
+    }
   }
 }
 function updateThumbs(){
-  thumbsCont.querySelectorAll('.thumb').forEach(t=>
-    t.classList.toggle('active',parseInt(t.dataset.idx)===currentIdx)
-  );
+  thumbsCont.querySelectorAll('.thumb').forEach(t=>{
+    t.classList.toggle('active', parseInt(t.dataset.idx)===currentSpreadIdx);
+  });
   const active=thumbsCont.querySelector('.thumb.active');
   if(active)active.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});
 }
 
-function jumpTo(idx){ if(idx===currentIdx)return; currentIdx=idx; resetPan(); renderSpread(); }
-function nextPage(){ const s=singlePage?1:2,max=singlePage?pages.length-1:pages.length-2; if(currentIdx+s<=max){currentIdx+=s;resetPan();renderSpread();} }
-function prevPage(){ const s=singlePage?1:2; if(currentIdx-s>=0){currentIdx-=s;resetPan();renderSpread();} }
+function jumpTo(idx){
+  if(idx===currentSpreadIdx) return;
+  currentSpreadIdx=idx;
+  resetPan();
+  renderSpread();
+}
+function nextPage(){
+  if(singlePage){
+    if(currentSpreadIdx < pages.length-1){ currentSpreadIdx++; resetPan(); renderSpread(); }
+  } else {
+    if(currentSpreadIdx < spreads.length-1){ currentSpreadIdx++; resetPan(); renderSpread(); }
+  }
+}
+function prevPage(){
+  if(currentSpreadIdx > 0){ currentSpreadIdx--; resetPan(); renderSpread(); }
+}
 function zoomIn(){ userScale=Math.min(userScale+.15,2.5);clampPan();applyTransform(); }
 function zoomOut(){ userScale=Math.max(userScale-.15,0.5);if(userScale<=1)resetPan();else{clampPan();applyTransform();} }
 function zoomReset(){ userScale=1;resetPan(); }
 
 function openFlip(){
+  document.getElementById('flip-toggle-btn').style.display = 'none';
   pages=collectPages();
+  buildSpreads();
   singlePage=checkSingle();
-  currentIdx=0;
+  currentSpreadIdx=0;
   baseScale=computeScale();
   userScale=1;
   resetPan();
@@ -1757,6 +1910,7 @@ function openFlip(){
   document.body.style.overflow='hidden';
 }
 function closeFlip(){
+  document.getElementById('flip-toggle-btn').style.display = '';
   shell.classList.remove('active');
   document.body.style.overflow='';
 }
